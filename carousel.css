@@ -25,8 +25,30 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  width: 100%;
 }
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Neuton', serif;
+}
+
+.aboutme {
+  padding-top: 100px;
+    margin-top: -65px;
+    text-align: center;
+    font-family: 'Neuton', serif;
+    background-color: grey;
+    color: black;
+    font-size: 30px;
+    height: 400px;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
