@@ -76,6 +76,7 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="carousel.rtl.css">
+    <link rel="stylesheet" href="product.css">
   </head>
   <body>    
 <header data-bs-theme="dark">
@@ -91,10 +92,13 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#Work">Sample Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -106,7 +110,7 @@
   </nav>
 </header>
 <main>
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div id="top" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-bottom: 0rem;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -143,36 +147,62 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-      <div class="aboutme"><h2>ABOUT ME</h2>
-          <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+    <main>
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div id="About" class="container-fluid py-5">
+            <h1 class="display-5 fw-bold ">ABOUT ME</h1>
+            <p class="col-md-8 fs-4">I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+          </div>
+        </div>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div id="Work" class="my-3 py-3">
+            <h2 class="display-5">Sample Work 1</h2>
+            <p class="lead">Survey Website</p>
+          </div>
+          <div><img src="Sample portfolio.png" alt="" height="300px" width="650px"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Sample Work 2</h2>
+            <p class="lead">Website for a coffee Shop</p>
+          </div>
+          <div><img src="Screenshot 2023-09-25 201045.png" alt="#" height="300px" width="650px"></div>
         </div>
       </div>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Sample Work 3</h2>
+            <p class="lead">Anime Website</p>
+          </div>
+          <div><img src="sample5.png" alt="" height="300px" width="650px"></div>
+        </div>
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Sample Work 4</h2>
+            <p class="lead">Table</p>
+          </div>
+          <div><img src="sample2.png" alt="#" height="300px" width="650px"></div>
+        </div>
       </div>
-    </div>
-  </div>
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">ABOUT ME</h2>
-        <p class="lead">I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+      <div id="Contact" class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Get in touch with me!</h1>
+        <div class="col-lg-6 mx-auto">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Submit</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Download CV</button>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 order-md-1">
-        <img src="IMG_0759-removebg-preview.png" class="img-thumbnail" alt="...">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
